@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Event Double Click</title>
+	<SCRIPT type="text/javascript" src="jquery-3.6.0.js"></SCRIPT>
+  	<SCRIPT type="text/javascript">
+  	$(document).ready(function(){
+  		$(".button1").dblclick(function(){ $("#b1").css("background-color","Coral");
+  		$(".button2").dblclick(function(){ $("#b2").css("background-color","Tomato");
+  		$(".button3").dblclick(function(){ $("#b3").css("background-color","Orange");
+  		$(".button4").dblclick(function(){ $("#b4").css("background-color","Darkorange");	
+  					});
+  				});
+  			});
+  		});
+  	});
+  	
+  	</SCRIPT>
+</head>
+<style type="text/css">
+	body{
+	font-family: sans-serif;
+	}
+ 
+	h2{
+		margin-left: 220px;
+	}
+	h3{
+		margin-left: 140px;
+	}
+ 
+	button{
+		width: 120px;
+		height: 120px;
+		border: 2px solid black;
+		background-color:yellow;
+		font-family: cursive;
+    	cursor: pointer;
+   	 	margin-left: 50px;
+    	margin-top: 5px;
+	}
+</style>
+<body>
+	<h2>Membuat Event Double Click</h2>
+	<h3>Klik 2x pada setiap kotak untuk mengubah warnanya</h3>
+	<button id="b1"class="button1"><b>Coral</b></button>
+	<button id="b2"class="button2"><b>Tomato</b></button>
+	<button id="b3"class="button3"><b>Orange</b></button>
+	<button id="b4"class="button4"><b>Dark Orange</b></button>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Efek Fade</title>
+  <SCRIPT type="text/javascript" src="jquery-3.6.0.js"></SCRIPT>
+  <SCRIPT type="text/javascript">
+  $(document).ready(function(){
+    $("#sembunyi").click(function(){ $("#box").fadeOut("slow");
+      $("#tampil").click(function(){ $("#box").fadeIn("slow");
+        $("#toggle").click(function(){ $("#box").fadeToggle(3000);
+        });
+      });
+    });
+  });
+  </SCRIPT>
+
+  <style type="text/css">
+    #box {
+      width: 300px;
+      height: 120px;
+      background-color: yellow;
+      border: 2px solid black;
+    }
+    #body{
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+<h2>Tombol Fade Out, Fade In dan Fade to 0.3 Second</h2>
+  <button id="sembunyi">Fade Out</button>
+  <button id="tampil">Fade In</button>
+  <button id="toggle">Fade to 0.3</button>
+<br><br>
+  <div id="box"></div>
+</body>
+</html>
